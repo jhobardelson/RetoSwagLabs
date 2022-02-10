@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/comprobarCarrito.feature",
+        features = "src/test/resources/features/comprobarcarrito.feature",
         glue = "co/com/swaglabs/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE)
 

@@ -13,7 +13,7 @@ Feature: Comprar producto
       | apellido      | <apellido>      |
       | codigopostal  | <codigopostal>  |
 
-    Then Se valida la frase "THANK YOU FOR YOUR ORDER"
+    Then Se valida la frase "CHECKOUT: COMPLETE!"
 
       Examples:
         | username      | password      | nombre  | apellido  | codigopostal  |

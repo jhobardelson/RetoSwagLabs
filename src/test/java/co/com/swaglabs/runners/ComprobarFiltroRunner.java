@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/Comprarproducto.feature",
+        features = "src/test/resources/features/comprobarfiltro.feature",
         glue = "co/com/swaglabs/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE)
 
-public class RealizarCompra {
+public class ComprobarFiltroRunner {
 }

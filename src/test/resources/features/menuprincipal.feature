@@ -8,7 +8,7 @@ Feature: Menu principal
     When Revisar el menu
       | username | <username> |
       | password | <password> |
-    Then Valida que se alla cerrado sesion y verifica que exitas esta frase "Accepted usernames are:"
+    Then Valida que se alla cerrado sesion y verifica que exitas esta frase "Pass or fail. The world relies on your code."
 
     Examples:
       | username      | password      |

@@ -9,7 +9,7 @@ import static userinterfaces.ElementosWebSwagLabs.*;
 public class VerificarNumeroProductosAgregados implements Question {
     @Override
     public Object answeredBy(Actor actor) {
-        return Text.of(CANTIDADPRODUCTOS).asInteger();
+        return Text.of(CANTIDADPRODUCTOS).viewedBy(actor).asString();
     }
 
     public static VerificarNumeroProductosAgregados verificarNumeroProductosAgregados() {

@@ -4,16 +4,16 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
-
 import static userinterfaces.ElementosWebSwagLabs.*;
 
-public class VerificarMensaje implements Question {
+public class VerificarTotalComprar implements Question {
+
     @Override
     public Object answeredBy(Actor actor) {
-        return Text.of(FRASE_ESPERADA).viewedBy(actor).asString();
+        return Text.of(MENSAJE_TOTAL_COMPRA).viewedBy(actor).asString();
     }
 
-    public static VerificarMensaje verificarMensaje() {
-        return new VerificarMensaje();
+    public static VerificarTotalComprar verificarTotalComprar() {
+        return new VerificarTotalComprar();
     }
 }

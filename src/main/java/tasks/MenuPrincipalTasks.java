@@ -3,6 +3,7 @@ package tasks;
 import interactions.AgregarProductos;
 import interactions.Login;
 import interactions.VerificarBotones;
+import interactions.VerificarBotones2;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -26,6 +27,12 @@ public class MenuPrincipalTasks implements Task {
 
         //Verificar botones
         actor.attemptsTo(VerificarBotones.verificarBotones());
+
+        //login
+        actor.attemptsTo(Login.login(mapDatos));
+
+        //verificar botones
+        actor.attemptsTo(VerificarBotones2.verificarBotones2());
     }
 
     public static MenuPrincipalTasks menuPrincipalTasks(Map<String, String> mapDatos) {
